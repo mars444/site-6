@@ -183,7 +183,7 @@ html{
 //end section home
 //titles
 .red-title{
-    padding-top: 120px;
+    padding-top: 110px;
     margin-bottom: 50px;
     text-transform: uppercase;
     font-weight: 300;
@@ -349,3 +349,111 @@ html{
          }
 }
 //end section ourmenu
+
+.chefs{
+    text-align: center;
+    &-inner{
+        padding-bottom: 150px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &-title{
+        padding-left: 110px;
+        display: inline;
+        &:before{
+            position: absolute;
+            content: "";
+            width: 40px;
+            height: 1px;
+            left: 50px;
+            background-color: $red;
+            color: $red;
+            bottom: 10px;
+        }
+    }
+    &__box{
+        padding: 7px;
+        border: 1px solid $red;
+        max-width:360px ;
+        position: relative;
+        border-radius: 10px;
+    }
+    &-social-icons{
+        transition: all .5s;
+        opacity: 0;
+        z-index: 2;
+        display: flex;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        li + li{
+            margin-left: 20px;
+        }
+        a{
+            position: relative;
+            font-size: 25px;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            transition: all .5s;
+            border-radius: 50%;
+            cursor: pointer;
+            
+            &:hover{
+                background-color: $red;
+                color: white;
+            }
+        }
+        i{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    &__box:hover{
+        .chefs-overlay{
+            opacity: 0.7;
+        }
+        .chefs-name{
+            color: $red;
+        }
+        .chefs-social-icons{
+            opacity: 1;
+        }
+    }
+    &-overlay{
+        position: absolute;
+        background-color: #2a2a2a;
+        border-radius: 10px;
+        top: 7px;
+        bottom: 71px;
+        left: 7px;
+        right: 7px;
+        opacity: 0.1;
+        z-index: 1;
+        transition: all .3s;
+        
+
+    }
+    &-img{
+        border-radius: 10px;
+        max-width: 340px;
+        overflow: hidden;
+    }
+    &-name{
+        padding: 5px 0;
+        transition: all .5s;
+        font-size: 20px;
+        font-weight: 700;
+        color: #2a2a2a;
+      
+    }
+    &-direction{
+        font-size: 14px;
+        color: #2a2a2a;
+        padding-bottom: 10px;
+    }
+
+}
