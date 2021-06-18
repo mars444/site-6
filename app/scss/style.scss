@@ -698,3 +698,52 @@ html{
     
 }
 //end sectio week
+
+.footer{
+    background-color: $red;
+    &-inner{
+        height: 160px;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr auto 1fr;
+     
+    }
+    &-social{
+        &-link{
+            position: relative;
+            font-size: 22px;
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            border-radius: 50%;
+            &:hover{
+               &::before{
+                   color: #000;
+               }
+                
+            }
+            &::before{
+                transition: all .5s;
+                color: $red;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+            & + &{
+                margin-left: 20px;
+            }
+        }
+    }
+    &-designer{
+        margin-left: auto;
+        span{
+            padding-top: 5px;
+            display: block;
+        }
+    }
+    &-logo{
+        margin: 0 auto;
+    }
+}
+//end footer
