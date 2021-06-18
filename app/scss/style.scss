@@ -353,7 +353,7 @@ html{
 .chefs{
     text-align: center;
     &-inner{
-        padding-bottom: 150px;
+       padding-bottom: 100px;
         display: flex;
         justify-content: space-between;
     }
@@ -456,4 +456,146 @@ html{
         padding-bottom: 10px;
     }
 
+}
+//end dection chefs
+
+//start section contact
+.contact{
+    color: white;
+    .red-title{
+        color: white;
+        &::before{
+            background-color: white;
+        }
+    }
+    .sub-red-title{
+        color: white;
+    }
+    &-inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-box{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-mail,&-number{
+        font-size: 20px;
+        font-weight: 700;
+       padding-top: 50px;
+        text-align: center;
+        width: 220px;
+        height: auto;
+        border-radius: 10px;
+        background-color: white;
+        padding: 40px 25px 10px 25px;
+        a{  
+            padding: 5px;
+            display: inline-block;
+            padding-bottom:5px;
+            font-size: 14px;
+            transition: all .5s;
+            &:hover{
+                color: $red;
+            }
+        }
+        &-title{
+            padding-bottom: 5px;
+            color: #000;
+        }
+    }
+    &-number,&-mail{
+        position: relative;
+    }
+    &-text{
+        padding-bottom: 60px;
+    }
+    &-link-icon{
+        font-size: 30px;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 0;
+        background-color: $red;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 50%;
+        transition: all .5s;
+        &:hover{
+            background-color: #000;
+            i{
+            color: $red;
+              }
+            }
+        i{
+            color: #fff;
+            font-size: 25px;
+            transform: translateY(50%);
+            transition: all .5s;
+        }
+    }
+    &-left{
+        width: 500px;
+        padding-bottom: 100px;
+    }
+    &-right{
+        margin-top: 50px;
+        margin-bottom: 50px;
+       width: 600px;
+        background-color: white;
+        border-radius: 15px;
+        padding: 50px 0px 50px 20px;
+        &-title{
+            text-align: center;
+            font-weight: 700;
+            font-size: 30px;
+            color: #2a2a2a;
+            margin-bottom: 30px;
+        }
+    }
+    &-form{
+        display: flex;
+        flex-wrap: wrap;
+        input{
+            width:270px ;
+            height:45px ;
+            color: #2a2a2a;
+             font-size: 14px;
+             border: 1px solid #ddd;
+             margin-right: 20px;
+             border-radius: 5px;
+             outline: none;
+             padding: 0 20px;
+             margin-bottom: 15px;
+        }
+        textarea{
+            width: 100%;
+            height: 150px;
+            margin-right: 20px;
+            resize: none;
+            color: #2a2a2a;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        &-btn{
+            cursor: pointer;
+            width: 100%;
+            margin-right: 20px;
+            background-color: $red;
+            padding: 10px ;
+           border-radius: 5px;
+           font-size: 20px;
+           color: white;
+           transition: all .5s;
+           &:hover{
+               color: $red;
+               background-color: #000;
+           }
+        }
+    }
+    
 }
