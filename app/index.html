@@ -424,8 +424,21 @@
                             <input type="number" min="0" max="12" value="1" readonly>
                             <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"><i>+</i></button>
                         </div>
-                        <input type="datetime-local" max="2050-04-20" min="2021-04-10"/>
-                       
+                        <input id="date" type="date">
+                        <input id="time" type="time"  list="time-list">
+                        <datalist id="time-list" style="text-align: center;">
+                            <option value="10:00">
+                                <option value="11:00">
+                                    <option value="12:00">
+                                        <option value="13:00">
+                                            <option value="14:00">
+                                                <option value="15:00">
+                                                    <option value="16:00">
+                                                        <option value="17:00">  
+                                                            <option value="18:00">
+
+                            
+                            </datalist>
                         <textarea placeholder="Message...." name="" id=""   >
                     </textarea>
                         <button class="contact-form-btn">

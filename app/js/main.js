@@ -126,6 +126,10 @@ $(function () {
 
 
 
-
+  var date = document.getElementById('date');
+  var time = document.getElementById('time');
+  var dateObj = new Date();
+  date.value = dateObj.toISOString().slice(0,10)
+  time.value = dateObj.getHours() + ':' + dateObj.getMinutes();
 
 });
