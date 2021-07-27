@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    fwefgweg
     <header class="header">
         <div class="container">
             <div class="header-inner">
@@ -414,7 +415,7 @@
                     <div class="contact-form">
                         <input type="text" placeholder="Your Name">
                         <input type="email" placeholder="Your Mail">
-                        <input type="tel" pattern="\(\d\d\d\) ?\d\d\d-\d\d-\d\d" placeholder="+7 (999) 999-99-99" />
+                        <input type="tel" placeholder="8 999 999-99-99" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" />
                         <div class="number">
                             <button class="number-minus" type="button"
                                 onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">
